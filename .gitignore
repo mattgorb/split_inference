@@ -1,0 +1,7 @@
+# Ignore all .terraform directories
+.terraform/
+**/.terraform/
+
+# Ignore all model_store directories
+model_store/
+**/model_store/
