@@ -16,7 +16,7 @@ I run everything in the file ```deploy_all.sh```.  This file is kind of buggy an
 The cool part of the code is in client/app/model_executor.py (```model_communication```) and server/app/model_backend.py (```generate```)
 
 
-#### Stuff to do: 
+## Stuff to do: 
 
 **Frontend**
 
