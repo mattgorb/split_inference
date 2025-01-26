@@ -44,7 +44,7 @@ The cool part of the code is in client/app/model_executor.py (```model_communica
 
 **Architecture**
 - IMPORTANT*** Stitch together Client/Server backends better--right now terraform first creates a server VPC for peering with client server, then creates client, then creates server, all in few scripts.  In a real world scenario I'd want to share relevant data (VPC peering connection, private IP) via AWS buckets and across remote environments, rather than running simple bash files. Need to handle this for an autoscaling scenario as well - If demand increases, how do we handle communication to scale the multiple backend servers? since we explicitly need a model-client->model-server connection, this could be tricky. this scaling logic could be significant in the success of this applicaiton.  
-- Restructure code base
+- Restructure code base. whole repo needs refactored. 
 
 **Future**
 - Move backend to a Trusted Execution Environment (TEE)--This would add a ton of security but could be a nightmare to implement because the NCCL communication might not be capable.  AWS has an option for this (AWS Enclave) 
