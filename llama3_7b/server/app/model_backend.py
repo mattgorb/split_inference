@@ -109,9 +109,6 @@ class ModelBackend:
 
 
 
-
-
-
 def generate(model_owner,device,  rank, group_mo, group_all, model_owner_initial_rank=1):
     curr_batch_size=torch.zeros(1).int().to(device)
     curr_context_size=torch.zeros(1).int().to(device)
